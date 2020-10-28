@@ -1,0 +1,225 @@
+
+body {
+  height: 100vh;
+}
+#overlay{
+  display: none ;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(115, 115, 115);
+  z-index: 2;
+  cursor: pointer;
+}
+.overlayStyle  {
+   display: block !important;
+}
+.header {
+position: relative;
+z-index: 999;
+
+span {
+  font-size: 12px;
+  color: #929292;
+  &:hover{
+    cursor: pointer;
+    color: #03ac0e;
+  }
+}
+
+.item-header-1 {
+  padding: 10px 32px;
+  background-color: #f4f4f4;
+
+
+  .icont , .img-shop{
+    width: 14px;
+  }
+}
+
+.item-header-2 {
+  padding: 8px 32px;
+  background-color: white;
+
+.logo-tokpedia {
+  display: block;
+  width: 147px;
+  border-radius:  10px transparent ;
+  
+}
+
+.text-kategory{
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: #f3f4f5 !important;
+    cursor: pointer;
+    color: #03ac0e ;
+    border-radius: 5px;
+  }
+
+  }
+
+  span{
+    color: #929292;
+  }
+
+  .wrap-search {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 35px;
+    
+  }
+      .icoSeacrh{
+        display: block;
+        width: max-content;
+        border-radius: 3px;        
+        position: absolute;
+      }
+
+      
+
+      
+  .form-control {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+
+    &::placeholder {
+      font-size: 14px;
+      color: #cdcd;
+    }
+    &:focus{
+      border: 1px solid #f3f4f5;
+      box-shadow: none;
+    }
+    
+  }
+  .wrap-icont-search {
+    background-color: #f3f4f5;
+    position: absolute;
+    height: 100%;
+    right: 0;  
+    width: 35px;
+    overflow: hidden;
+
+    
+  }
+
+
+
+ }
+
+.wrap-img-shop{
+  position: relative;
+  background-color: transparent;
+  height: max-content;
+  width: max-content;
+  padding: 0px 8px 5px 8px ;
+  border-radius: 3px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: #f3f4f5;
+    cursor: pointer;
+  }
+  .line{
+    font-size: 26px;
+    color: #cdcdcd;
+    
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+
+}
+
+
+
+
+  .list-menu {
+    span{
+      margin-right: 1.5rem;
+    }
+  }
+   
+  .btn{
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: #03ac0e;
+    &:first-child{
+      background-color: white;
+      border: 1px solid #03ac0e;
+      color: #03ac0e;
+    }
+  }
+
+
+
+  .text-under-search{
+    margin-left: 18%;
+    span{
+      &:hover {
+        color: #03ac0e;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+  .menu-bar{
+   visibility: hidden;
+    position: absolute;
+    right: 35px;
+    top: 91px;
+    background-color: #ffff;
+    -webkit-box-shadow : 0px -1px 9px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow : 0px -1px 9px 0px rgba(0,0,0,0.1);
+    box-shadow:  0px -1px 9px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+
+    transition: 0.2s;
+    transform: rotateX(-30deg);
+
+    h4{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 14px;
+      color: #313533;
+    }
+    .btn {
+      width: 100%;
+      color: #ffff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  }
+
+  
+// Menubar Click Togle Javascript 
+  .onMenubar{
+    
+    visibility: visible;
+    transform-origin: 0% 0% ;
+    transform: rotateX(0);
+  }
+
+  
+
+  // end  click 
+
+}
+
+

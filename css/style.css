@@ -1,0 +1,225 @@
+body {
+  height: 100vh;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #737373;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlayStyle {
+  display: block !important;
+}
+
+.header {
+  position: relative;
+  z-index: 999;
+}
+
+.header span {
+  font-size: 12px;
+  color: #929292;
+}
+
+.header span:hover {
+  cursor: pointer;
+  color: #03ac0e;
+}
+
+.header .item-header-1 {
+  padding: 10px 32px;
+  background-color: #f4f4f4;
+}
+
+.header .item-header-1 .icont, .header .item-header-1 .img-shop {
+  width: 14px;
+}
+
+.header .item-header-2 {
+  padding: 8px 32px;
+  background-color: white;
+}
+
+.header .item-header-2 .logo-tokpedia {
+  display: block;
+  width: 147px;
+  border-radius: 10px transparent;
+}
+
+.header .item-header-2 .text-kategory {
+  padding: 5px 10px;
+}
+
+.header .item-header-2 .text-kategory:hover {
+  background-color: #f3f4f5 !important;
+  cursor: pointer;
+  color: #03ac0e;
+  border-radius: 5px;
+}
+
+.header .item-header-2 span {
+  color: #929292;
+}
+
+.header .item-header-2 .wrap-search {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  height: 35px;
+}
+
+.header .item-header-2 .icoSeacrh {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.header .item-header-2 .form-control {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  z-index: 1;
+}
+
+.header .item-header-2 .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #cdcd;
+}
+
+.header .item-header-2 .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: #cdcd;
+}
+
+.header .item-header-2 .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: #cdcd;
+}
+
+.header .item-header-2 .form-control::placeholder {
+  font-size: 14px;
+  color: #cdcd;
+}
+
+.header .item-header-2 .form-control:focus {
+  border: 1px solid #f3f4f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .item-header-2 .wrap-icont-search {
+  background-color: #f3f4f5;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 35px;
+  overflow: hidden;
+}
+
+.header .wrap-img-shop {
+  position: relative;
+  background-color: transparent;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 8px 5px 8px;
+  border-radius: 3px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header .wrap-img-shop:hover {
+  background-color: #f3f4f5;
+  cursor: pointer;
+}
+
+.header .wrap-img-shop .line {
+  font-size: 26px;
+  color: #cdcdcd;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+
+.header .list-menu span {
+  margin-right: 1.5rem;
+}
+
+.header .btn {
+  border-radius: 8px;
+  font-size: 13px;
+  background-color: #03ac0e;
+}
+
+.header .btn:first-child {
+  background-color: white;
+  border: 1px solid #03ac0e;
+  color: #03ac0e;
+}
+
+.header .text-under-search {
+  margin-left: 18%;
+}
+
+.header .text-under-search span:hover {
+  color: #03ac0e;
+  cursor: pointer;
+}
+
+.header .menu-bar {
+  visibility: hidden;
+  position: absolute;
+  right: 35px;
+  top: 91px;
+  background-color: #ffff;
+  -webkit-box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotateX(-30deg);
+          transform: rotateX(-30deg);
+}
+
+.header .menu-bar h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header .menu-bar p {
+  font-size: 14px;
+  color: #313533;
+}
+
+.header .menu-bar .btn {
+  width: 100%;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header .onMenubar {
+  visibility: visible;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+/*# sourceMappingURL=style.css.map */
