@@ -1,6 +1,7 @@
 
 body {
-  height: 100vh;
+overflow: hidden;  
+  height: 100vh ;
 }
 #overlay{
   display: none ;
@@ -19,7 +20,8 @@ body {
    display: block !important;
 }
 .header {
-position: relative;
+position: fixed;
+width: 100%;
 z-index: 999;
 
 span {
@@ -207,6 +209,10 @@ span {
 
   }
 
+
+
+
+
   
 // Menubar Click Togle Javascript 
   .onMenubar{
@@ -222,4 +228,91 @@ span {
 
 }
 
+
+
+
+
+
+
+// ModalSearch 
+.modal {     
+  z-index: 9999;
+  .modal-content {
+    top: 56px;
+    right: 300px;
+    padding: 19px;
+    width: 211%;
+    border-radius: 0;
+    border: none;
+  }
+  .mc-head {
+    .btn{
+      border: 1px solid #03ac0e;
+      border-color: transparent;
+      border-radius: 20px;
+      color: #03ac0e;
+    }
+    span {
+      color: #818181;
+    }
+    .title {
+      color: #7b7b7b;
+    }
+  }
+}
+// ModalSearch 
+
+
+
+// kategory scroll hover 
+
+.kategory{
+  display: flex;
+  flex-direction: column;
+  #head-category {
+    width: 100%;
+    overflow-x: scroll;
+    position: fixed;
+    top: 114px;
+    z-index: 99999;
+    border-top: 1px solid #cdcdcd;
+    background-color: #ffffff;
+
+  }
+
+
+      span{
+        padding: 10px 30px ;
+        border: 2px solid transparent;
+        color: #969696;
+  
+        &:hover{
+          padding: 10px 30px ;
+          border-bottom:2px solid #03ac0e ;
+          color: #03ac0e;
+          cursor: pointer;
+        }
+      }
+
+      // overflow y adalah scroll ke bawah x kesamping 
+      .head-left {
+        overflow-y: scroll;
+        height: 100vh;
+        padding-top:185px ;
+        padding-left:35px ;
+        margin-right: 10px;
+
+        h6{
+          font-size: 12px;
+          padding: 10px 0px 10px 10px;
+          border-radius: 4px;
+          margin-right: 10px;
+          &:hover {
+                background-color: gainsboro;
+                cursor: pointer;
+          }
+        }
+      }
+}
+// kategory scroll hover 
 

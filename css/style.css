@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -21,7 +22,8 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 999;
 }
 
@@ -221,5 +223,86 @@ body {
           transform-origin: 0% 0%;
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.modal .modal-content {
+  top: 56px;
+  right: 300px;
+  padding: 19px;
+  width: 211%;
+  border-radius: 0;
+  border: none;
+}
+
+.modal .mc-head .btn {
+  border: 1px solid #03ac0e;
+  border-color: transparent;
+  border-radius: 20px;
+  color: #03ac0e;
+}
+
+.modal .mc-head span {
+  color: #818181;
+}
+
+.modal .mc-head .title {
+  color: #7b7b7b;
+}
+
+.kategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kategory #head-category {
+  width: 100%;
+  overflow-x: scroll;
+  position: fixed;
+  top: 114px;
+  z-index: 99999;
+  border-top: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.kategory span {
+  padding: 10px 30px;
+  border: 2px solid transparent;
+  color: #969696;
+}
+
+.kategory span:hover {
+  padding: 10px 30px;
+  border-bottom: 2px solid #03ac0e;
+  color: #03ac0e;
+  cursor: pointer;
+}
+
+.kategory .head-left {
+  overflow-y: scroll;
+  height: 100vh;
+  padding-top: 185px;
+  padding-left: 35px;
+  margin-right: 10px;
+}
+
+.kategory .head-left h6 {
+  font-size: 12px;
+  padding: 10px 0px 10px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.kategory .head-left h6:hover {
+  background-color: gainsboro;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
